@@ -1,0 +1,106 @@
+.logo{
+	height: 65px;
+	top:0px;
+	position: absolute;
+}
+.nav>li>a{
+	font-size: 18px;
+	margin-top: 15px;
+	font-family: "Nunito", sans-serif;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #12871b;
+}
+
+#space{
+	margin-right: 15px;
+}
+.container{
+  background: #000 url("water.jpg");
+  color: #fff;
+  width: 100%;
+  height :700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: #4ce054;
+  opacity: .3;
+  position: absolute;
+ }
+.content h1{
+	font-family: 'Roboto' ;
+	font-size: 90px;
+	z-index: 1;
+	text-align: center;
+	font-weight: 600;
+}
+.content{
+	padding-top: 15%;
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+.btn{
+	color: #12871b;
+}
+h3{
+	font-family: Courier New, monospace;
+	font-size: 18px;
+	font-weight: 500;
+}
+hr {
+    width: 500px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.Head{
+	font-size: 60px;
+	font-weight: -100;
+	color:#12871b;
+	text-align: center;
+	font-family: 'Julius Sans One';
+	text-transform: uppercase;
+	padding-top: 50px;
+}
+.tabcontent{
+	text-align: center;
+}
+.card{
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: Courier New, monospace;
+	font-weight: 540;
+	font-size: 17px;
+	color:#777a77;
+}
+.contact{
+	background:#25942e;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+	font-family: Courier New, monospace;
+	font-weight: 545;
+	font-size: 17px;
+	color:white;
+}
+#bold{
+	font-size: 25px;
+	font-family: 'Julius Sans One';
+	font-weight: 600; 
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+
+}
+#menu:hover{
+	color:#2fe03d;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Results</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styleresult.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+	<div class="row" >
+    <div class="column col-lg-6 col-sm-12">
+        <!-- <img class="img1" src="{{url_for('static', filename='logon.png')}}"/> -->
+        <img class="img" src="{{url_for('static', filename='l.jpg')}}"/>    <!-- selected area pic -->
+        <div class="col-lg-12 col-md-6 col-sm-12 align-items-center">
+        <h3 class="text1">selected area</h3>
+            <form action="/code" entype="multipart/formdata">
+                <button class="button button1" onclick="code()">Process</button>
+            </form>
+            <h3 class="text2">Click 'Process' to start processing.
+                <br>Processing may take a while, be patient.</h3>
+        </div>
+    </div>
+    <div class="column1 col-lg-6 col-sm-12">
+    		<img class="img1" src="{{url_for('static', filename='logon.png')}}"/>
+            <h3 class="head">Total Area (sq. km)</h3>
+            <textarea rows="2" id="shadow" cols="23" readonly>{{ b }}</textarea>
+            <h3 class="head">Green Area (sq. km)</h3>
+            <textarea rows="2" id="shadow" cols="23" readonly>{{ c }}</textarea>
+            <h3 class="head">Build Area (sq. km)</h3>
+            <textarea rows="2" id="shadow" cols="23" readonly>{{ d }}</textarea>
+            <h3 class="head">Percentage (%)</h3>
+            <textarea rows="2" id="shadow" cols="23" readonly>{{ e }}</textarea>
+
+           <div class="text">
+               <h2 class="head">Recommendations:</h2>
+               <textarea id="shadow" rows="15" cols="70" readonly>{{ f }}</textarea>
+
+           </div>      
+          <a href="http://smartcitylab.pythonanywhere.com/"><button class="btn"><i class="fa fa-backward">  Back to Home Page </i></button></a>
+          <a href="http://smartcitylab.pythonanywhere.com/map?"><button class="btn"><i class="fa fa-map-marker">   Back to Map   </i></button></a>
+    </div>
+	</div>
+</div>
+<!-- <script>
+    function f1() {
+      var sourceOfPicture = "https://media.giphy.com/media/PtjXXwx2CuUrC/giphy.gif";
+      var img = document.getElementById('bigpic')
+      img.src = sourceOfPicture.replace('90x90', '225x225');
+      img.style.display = "block";
+}
+</script> -->
+	
+</body>
+</html>
